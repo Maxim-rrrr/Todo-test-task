@@ -1,0 +1,76 @@
+*, *:before, *:after
+  box-sizing: border-box
+  outline: none
+  text-decoration: none
+
+html
+  font-size: 14px
+
+body
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem
+  overflow-x: hidden
+
+img
+  max-width: 100%
+
+// /*Убрать полосу прокрутки для всей страницы*/
+// ::-webkit-scrollbar 
+//   width: 0
+
+.container
+  position: relative
+  max-width: 1200px
+  padding: 0 2rem
+  margin: 0 auto
+
+
+@media screen and ( max-width: 1200px )
+  html
+    font-size: 12px
+
+.main 
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  height: 100vh
+  position: relative
+
+.text-field
+  width: 100%
+
+.login-btn, .logout-btn
+  position: fixed
+  top: 30px
+  left: 30px
+  
+.table-tasks 
+  margin-bottom: 20px
+  padding: 18.5px 14px
+  border: 1px solid #C4C4C4
+  border-radius: 4px
+  &__item
+    padding: 10px 0
+    border-bottom: 1px solid #C4C4C4
+  &__field
+    display: flex
+    align-items: center
+    justify-content: center
+    &--sort
+      cursor: pointer
+      transition: 0.5s
+      &:hover
+        background: #00000023
+  &__panel
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 10px
+    margin-top: 20px
+    font-size: 16px
+  &__arrow-page
+    cursor: pointer
+
+
+

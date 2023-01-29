@@ -1,0 +1,31 @@
+{
+  "name": "test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node index",
+    "server": "nodemon index",
+    "client": "npm run start --prefix client",
+    "client:install": "npm install --prefix client",
+    "client:build": "npm run build --prefix client",
+    "dev": "cross-env NODE_ENV=development concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Maxim Semenov <Kewin.rrrr@gmail.com>",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "config": "^3.3.9",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.3",
+    "jsonwebtoken": "^9.0.0",
+    "mysql2": "^3.0.1",
+    "node-sass": "^8.0.0",
+    "winston": "^3.8.2"
+  }
+}
