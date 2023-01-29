@@ -5,6 +5,9 @@ import db from './database/index.js'
 import logger from "./modules/logger.js";
 import taskRouter from './api/task/taskRouter.js'
 import adminRouter from './api/admin/adminRouter.js'
+import * as url from 'url';
+
+const __dirname = url.fileURLToPath(new URL('.', import.meta.url));
 
 const app = express();
 app.use(express.json());
